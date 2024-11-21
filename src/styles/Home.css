@@ -1,0 +1,79 @@
+
+.home-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Container for the "Play" button and the image */
+.go-play-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 40px; 
+}
+
+/* Style for the image */
+.go-play-container img {
+    width: 400px; 
+    max-width: 400px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    margin-left: 50px;
+}
+
+/* Style for the "Play" button */
+.go-play-container button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.go-play-container button:hover {
+    background-color: #218838; 
+}
+
+/* Container for the scores section */
+.scores-container {
+    width: 100%;
+    max-width: 600px; /* Limit the width of the score section */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for the score header row */
+.score-option {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for each individual score row */
+.scores-container .score-option p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style for the score rows */
+.scores-container .score-option:not(:first-child) {
+    padding-top: 10px;
+}
+
+/* Add a space between the rows */
+.scores-container .score-option:last-child {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
